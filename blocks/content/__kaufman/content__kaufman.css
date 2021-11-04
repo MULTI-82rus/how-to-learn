@@ -1,0 +1,7 @@
+.content__kaufman {
+  padding: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}

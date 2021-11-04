@@ -1,0 +1,9 @@
+.cards__item {
+  margin: 60px 100px 0px 0px;
+  width: 240px;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+/* правый отступ будет сброшен у каждого третьего элемента с классом card */
