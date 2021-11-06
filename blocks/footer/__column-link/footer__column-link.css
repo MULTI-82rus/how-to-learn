@@ -5,12 +5,15 @@
   font-weight: 400;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   opacity: 1;
   transition: 0.5s;
 }
 
 .footer__column-link:hover {
   opacity: 0.5;
-  transition: 0.3s;
+  transition: 0.5s;
+}
+.footer__column-link:nth-of-type(2n) {
+  margin: 10px 0px;
 }

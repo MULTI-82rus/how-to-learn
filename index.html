@@ -7,7 +7,6 @@
   <meta name="keywords" content="Научится учится, Техники обучения, Метод Фейнмана, Цифры и факты, Весь мир - школа, Принципы обучения, Полезные ресурсы."> <!-- в нём прописывают ключевые слова сайта. -->
   <meta name="author" content="Антон Кутро"> <!-- Автора или авторов сайта указывают в метатегах author. Обратите внимание: в один метатег meta name="author" вписывается имя одного автора. -->
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./vendor/normalize.css">
   <link rel="stylesheet" href="./pages/index.css">
 </head>
 <body class="page">
@@ -18,7 +17,7 @@
       <a class="header__link" href="#tech">Узнать &rarr;</a> <!-- якорная ссылка href="#tech" ведёт на <section class="techniques" id="tech"> наэтой же странице,
         а элементу "header__link" задано поведение "opacity" прозрачность при наведении мыши -->
     </p>
-    <div class="header__main-illustration"></div>
+    <img class="header__main-illustration" src="images/two_again.png" alt="Картина Решетникова &laquo;Опять двойка&raquo;. На&nbsp;картине изображена семья, которая встречает мальчика, пришедшего из&nbsp;школы с&nbsp;&laquo;двойкой&raquo;.">
     <div class="header__square-pic rotation"></div>
   </header>
   <main class="content"> <!-- <main></main> — основное содержимое страницы; на многостраничных сайтах этот контейнер содержит всё, чем данная страница отличается от остальных. Имя тега по-английски означает «главный». -->
@@ -27,14 +26,14 @@
         <h2 class="two-columns__brief">Главные проблемы в&nbsp;обучении</h2>
         <div class="two-columns__main-text">
           <p class="two-columns__paragraph">Ни&nbsp;в&nbsp;школе, ни&nbsp;в&nbsp;институте нас не&nbsp;учат тому, как правильно изучать материал. Мы&nbsp;готовимся к&nbsp;экзаменам и&nbsp;учим билеты. Мы&nbsp;тренируемся решать однообразные задачи, чтобы лучше сдать тест, но&nbsp;часто в&nbsp;итоге это не&nbsp;дает нам реального знания. Зубрежка быстро выветривается и&nbsp;не&nbsp;приносит пользы.</p>
-          <p class="two-columns__paragraph two-columns__paragraph_with-space"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но&nbsp;почему-то этому мало где учат. Что с&nbsp;этим делать?</p>
+          <p class="two-columns__paragraph"><span class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но&nbsp;почему-то этому мало где учат. Что с&nbsp;этим делать?</p>
           <p class="two-columns__paragraph">Конкретные техники и&nbsp;упражнения помогают изменить подход к&nbsp;обучению, сделать его эффективным и&nbsp;захватывающим. Эти&nbsp;же техники применяются на&nbsp;примере обучения в&nbsp;Практикуме.</p>
         </div>
       </div>
     </section> <!-- <section></section> — организует несколько блоков в близкие по смыслу секции. -->
     <section class="techniques content__techniques" id="tech">
       <h2 class="section-title">Техники обучения</h2>
-      <h3 class="section-subtitle">Пять практик от Барбары Оакли</h3>
+      <p class="section-subtitle">Пять практик от Барбары Оакли</p>
       <ul class="cards"> <!--display Flex-->
         <li class="cards__item"> <!--display Flex column-->
           <img class="cards__image" src="images/cards-attention.png" alt="Белая книга в руках.">
@@ -64,17 +63,13 @@
     </section>
     <section class="video content__video">
       <h2 class="section-title">Видео нa&nbsp;TED</h2>
-      <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+      <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
       <div class="video__iframes">
-        <div class="video__iframe">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/J_89IMS5gJQ" title="TED Джош Кауфман&nbsp;&mdash; как за&nbsp;20&nbsp;часов научиться чему угодно." frameborder="0" allowfullscreen>Здравствуйте, ваш браузер не&nbsp;может показать классную штуку, потому что не&nbsp;поддерживает iframe.</iframe>
-        </div>
-        <div class="video__iframe">
-          <iframe width="515" height="316" src="https://www.youtube.com/embed/0u3bccaRmmg" title="Тим Урбан&nbsp;&mdash; Что происходит в&nbsp;голове у&nbsp;закоренелого прокрастинатора" frameborder="0" allowfullscreen>Здравствуйте, ваш браузер не&nbsp;может показать классную штуку, потому что не&nbsp;поддерживает iframe.</iframe>
-        </div>
+        <iframe class="video__iframe" src="https://www.youtube-nocookie.com/embed/J_89IMS5gJQ" allowfullscreen></iframe>
+        <iframe class="video__iframe" src="https://www.youtube-nocookie.com/embed/0u3bccaRmmg" allowfullscreen></iframe>
       </div>
     </section>
-    <section class="oakle content__oakle">
+    <section class="oakley content__oakley">
       <div class="two-columns">
         <h2 class="two-columns__brief">История Барбары Оакли.</h2>
         <div class="two-columns__main-text">
@@ -89,7 +84,7 @@
     </section>
     <section class="digits content__digits">
       <h2 class="section-title">Цифры и&nbsp;факты</h2>
-      <h3 class="section-subtitle">Про учёбу и&nbsp;мозг</h3>
+      <p class="section-subtitle">Про учёбу и&nbsp;мозг</p>
       <ul class="table">
         <li class="table__cell">
           <h4 class="table__heading">86&nbsp;миллиардов</h4>
@@ -98,7 +93,7 @@
         <li class="table__cell">
           <h4 class="table__heading">2.1 миллиарда</h4>
           <p class="table__text">Число нуждающихся в&nbsp;повышении квалификации</p>
-          <p class="table__text table__text_with-space">Всемирный Банк, 2017</p>
+          <p class="table__text">Всемирный Банк, 2017</p>
         </li>
         <li class="table__cell">
           <h4 class="table__heading">1000 терабайт</h4>
@@ -128,13 +123,13 @@
     </section>
     <section class="khan content__khan">
       <div class="khan__container">
-        <h3 class="khan__author">Салман Хан</h3>
+        <p class="khan__author">Салман Хан</p>
         <h2 class="khan__title">Весь мир&nbsp;&mdash; школа</h2>
         <p class="khan__quote">Страсть и&nbsp;новаторство Сала Хана меняют процесс обучения миллионов студентов по&nbsp;всему миру. Книгу &laquo;Весь мир&nbsp;&mdash; школа&raquo; нужно прочитать всем, кто занимается образованием&nbsp;&mdash; так учащиеся повсюду смогут получить навыки и&nbsp;знания, которые приносят успех в&nbsp;школе, карьере и&nbsp;жизни.</p>
-        <h3 class="khan__quote-author">Джордж Лукас</h3>
-        <h4 class="khan__quote-author-subline">Кинорежиссер, продюсер</h4>
+        <p class="khan__quote-author">Джордж Лукас</p>
+        <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
         <div class="khan__book-container">
-          <div class="khan__book-pic"></div>
+          <img class="khan__book-pic" src="images/khan-book.jpg" alt="">
           <a class="khan__buy-link" href="https://www.labirint.ru/" target="_blank">Купить книгу &rarr;</a>
         </div>
       </div>
@@ -142,7 +137,7 @@
     <section class="kaufman content__kaufman">
       <div class="kaufman__triangle rotation"></div>
       <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-      <h3 class="section-subtitle section-subtitle_theme_dark">от&nbsp;Джоша Кауфмана</h3>
+      <p class="section-subtitle section-subtitle_theme_dark">от&nbsp;Джоша Кауфмана</p>
       <ul class="table">
         <li class="table__cell table__cell_theme_dark">
           <h4 class="table__heading table__heading_theme_dark">1</h4>
@@ -188,12 +183,20 @@
     </section>
     <section class="resources content__resources">
       <h2 class="section-title">Полезные ресурсы</h2>
-      <h3 class="section-subtitle">Больше материалов о&nbsp;техниках и&nbsp;лайфхаках обучения</h3>
+      <p class="section-subtitle">Больше материалов о&nbsp;техниках и&nbsp;лайфхаках обучения</p>
       <div class="resources__logo-zone">
-        <a class="resources__logo resources__logo_arzamas" href="https://arzamas.academy/" target="_blank"></a>
-        <a class="resources__logo resources__logo_n1" href="https://nplus1.ru/" target="_blank"></a>
-        <a class="resources__logo resources__logo_strelka" href="https://strelka.com/" target="_blank"></a>
-        <a class="resources__logo resources__logo_polka" href="https://polka.academy/" target="_blank"></a>
+        <a class="resources__logo" href="https://arzamas.academy/" target="_blank">
+          <img class="resources__logo-arzamas" src="images/logo/resources-arzamas.svg" alt="Ссылка на ресурс Arzamas https://arzamas.academy/">
+        </a>
+        <a class="resources__logo" href="https://nplus1.ru/" target="_blank">
+          <img class="resources__logo-n1" src="images/logo/resources-n1.svg" alt="Ссылка на ресурс N+1 https://nplus1.ru/">
+        </a>
+        <a class="resources__logo" href="https://strelka.com/" target="_blank">
+          <img class=" resources__logo-strelka" src="images/logo/resources-strelka.svg" alt="Ссылка на ресурс Strelka https://strelka.com/">
+        </a>
+        <a class="resources__logo" href="https://polka.academy/" target="_blank">
+          <img class=" resources__logo-polka" src="images/logo/resources-polka.svg" alt="Ссылка на ресурс Полка https://polka.academy/">
+        </a>
       </div>
     </section>
   </main>
@@ -203,27 +206,27 @@
         <div class="logo logo_place_footer"></div>
         <p class="footer__author">&copy; Антон Кутро</p>
       </div>
-      <div class="footer__column footer__column_content_info">
-        <h3 class="footer__column-heading">О&nbsp;Практикуме</h3>
-        <div class="footer__column-links">
+      <div class="footer__column">
+        <p class="footer__column-heading">О&nbsp;Практикуме</p>
+        <nav class="footer__column-links">
           <a class="footer__column-link" href="https://praktikum.yandex.ru" target="_blank">Главная</a>
-          <a class="footer__column-link footer__column-link_with-space" href="#" target="_blank">Концепция</a>
+          <a class="footer__column-link" href="#" target="_blank">Концепция</a>
           <a class="footer__column-link" href="#" target="_blank">Наставники</a>
-        </div>
+        </nav>
       </div>
       <div class="footer__column footer__column_content_social">
-        <h3 class="footer__column-heading">Соцсети</h3>
-        <div class="footer__column-links">
+        <p class="footer__column-heading">Соцсети</p>
+        <nav class="footer__column-links">
           <a class="footer__column-link" href="https://www.facebook.com/yandex.praktikum" target="_blank">
             <img class="footer__social-icon" src="images/facebook_white.svg" alt="Facebook">Facebook
           </a>
-          <a class="footer__column-link footer__column-link_with-space" href="https://vk.com/yandex.praktikum" target="_blank">
+          <a class="footer__column-link" href="https://vk.com/yandex.praktikum" target="_blank">
             <img class="footer__social-icon" src="images/vk_white.svg" alt="ВКонтакте">ВКонтакте
           </a>
           <a class="footer__column-link" href="https://www.instagram.com/yndx.practicum" target="_blank">
             <img class="footer__social-icon" src="images/instagram_white.svg" alt="Instagram">Instagram
           </a>
-        </div>
+        </nav>
       </div>
     </div>
   </footer>
@@ -242,3 +245,11 @@
   <meta name="keywords" content="html, css, javascript">
   <meta name="author" content="Стас Басов">
 </head>-->
+
+
+<!-- <div class="video__iframe">
+  <iframe width="515" height="316" src="https://www.youtube.com/embed/J_89IMS5gJQ" allowfullscreen></iframe> title="Тим Урбан&nbsp;&mdash; Что происходит в&nbsp;голове у&nbsp;закоренелого прокрастинатора" frameborder="0" allowfullscreen  Здравствуйте, ваш браузер не&nbsp;может показать классную штуку, потому что не&nbsp;поддерживает iframe.
+</div>
+<div class="video__iframe">
+  <iframe width="515" height="316" src="https://www.youtube.com/embed/0u3bccaRmmg" allowfullscreen></iframe> title="Тим Урбан&nbsp;&mdash; Что происходит в&nbsp;голове у&nbsp;закоренелого прокрастинатора" frameborder="0" allowfullscreen  Здравствуйте, ваш браузер не&nbsp;может показать классную штуку, потому что не&nbsp;поддерживает iframe.
+</div> -->
