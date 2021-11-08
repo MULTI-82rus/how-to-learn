@@ -1,4 +1,5 @@
 .feynman {
+  min-height: 890px;
   background: url('../../images/feinman.png') bottom left/867px 637px no-repeat;
   background-color: #f2f2f2;
   display: flex;
